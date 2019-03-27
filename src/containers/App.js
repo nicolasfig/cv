@@ -3,11 +3,13 @@ import React from 'react';
 import Main from '../components/Main';
 import Sidebar from '../components/Sidebar';
 import About from '../components/About';
+import Social from '../components/Social';
 import Info from '../components/Info';
 import Education from '../components/Education';
 import Experience from '../components/Experience';
 import Certificates from '../components/Certificates';
 import Skills from '../components/Skills';
+
 
 import useGetData from '../hooks/useGetData';
 
@@ -27,18 +29,23 @@ const App = () => {
                     address = {data.address}
                     social = {data.social}
                 />
+                <Social
+                    social = {data.social}
+                />
             </Sidebar>
             <Info>
                 <Education
-                    data = {data.education}
+                    education = {data.education}
                 />
                 <Experience
                     experience = {data.experience} 
                 />
                 <Certificates
-                    certificates = {data.certificates}
+                    certificates = {data.certificate}
                 />
-                <Skills/>
+                <Skills
+                    skills = {data.skills}
+                />
             </Info>
         </Main>
     )
