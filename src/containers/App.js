@@ -16,7 +16,7 @@ const App = () => {
     const data = useGetData();
     console.log(data);
 
-    return(
+    return data.length === 0  ? <h1>Loading...</h1> : (
         <Main>
             <Sidebar>
                 <About
@@ -29,9 +29,15 @@ const App = () => {
                 />
             </Sidebar>
             <Info>
-                <Education/>
-                <Experience/>
-                <Certificates/>
+                <Education
+                    data = {data.education}
+                />
+                <Experience
+                    experience = {data.experience} 
+                />
+                <Certificates
+                    certificates = {data.certificates}
+                />
                 <Skills/>
             </Info>
         </Main>

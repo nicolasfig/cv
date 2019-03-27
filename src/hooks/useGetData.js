@@ -9,8 +9,7 @@ const useGetData = () => {
         fetch(api)
             .then(response => response.json())
             .then(data => setData(data))
-    }, [])
-
+    }, []);
     return myData;
 }
 
