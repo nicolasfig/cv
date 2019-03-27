@@ -3,7 +3,6 @@ import React from 'react';
 import Main from '../components/Main';
 import Sidebar from '../components/Sidebar';
 import About from '../components/About';
-import Social from '../components/Social';
 import Info from '../components/Info';
 import Education from '../components/Education';
 import Experience from '../components/Experience';
@@ -27,9 +26,6 @@ const App = () => {
                     profession = {data.profession}
                     bio = {data.bio}
                     address = {data.address}
-                    social = {data.social}
-                />
-                <Social
                     social = {data.social}
                 />
             </Sidebar>

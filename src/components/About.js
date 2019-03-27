@@ -1,6 +1,6 @@
 import React from 'react';
-
-const About = ( {avatar, name, profession, bio, address} ) => (
+import Social from './Social';
+const About = ( {avatar, name, profession, bio, address,social} ) => (
     <div className="About">
         <div className="About-container">
             <div className="About-avatar">
@@ -21,6 +21,9 @@ const About = ( {avatar, name, profession, bio, address} ) => (
                 <p>{address}</p>
             </div>
             <div className="About-social">
+                <Social
+                    social = {social}
+                />
             </div>
         </div>
     </div>
