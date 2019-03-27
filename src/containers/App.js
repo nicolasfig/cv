@@ -19,7 +19,14 @@ const App = () => {
     return(
         <Main>
             <Sidebar>
-                <About/>
+                <About
+                    avatar = {data.avatar}
+                    name = {data.name}
+                    profession = {data.profession}
+                    bio = {data.bio}
+                    address = {data.address}
+                    social = {data.social}
+                />
             </Sidebar>
             <Info>
                 <Education/>
