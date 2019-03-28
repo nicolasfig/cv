@@ -3,7 +3,7 @@ cache:
   directories: 
     - ~!@/.npm
 node-js:
-  - '9'
+  - 'stable'
 git:
   depth: 3
 script:
